@@ -242,9 +242,16 @@ function viewAllPay() {
   .container {
     padding: 10px 10px;
   }
+  .tabs-bar {
+    flex-wrap: wrap;
+    gap: 2px;
+  }
   .tab-btn {
     padding: 7px 12px;
     font-size: 12px;
+    flex: 1 1 auto;
+    text-align: center;
+    border-radius: 6px;
   }
 }
 

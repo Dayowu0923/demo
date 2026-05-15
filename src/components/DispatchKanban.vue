@@ -557,4 +557,29 @@ const dragOver = ref("");
   border: 1px dashed rgba(255, 255, 255, 0.07);
   border-radius: 8px;
 }
+
+/* ── RWD ──────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .kb-header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .kb-board {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 540px) {
+  .kb-header {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .kb-board {
+    grid-template-columns: 1fr;
+  }
+  .ks-count {
+    font-size: 24px;
+  }
+  .kc-card {
+    padding: 9px 10px;
+  }
+}
 </style>

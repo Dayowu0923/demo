@@ -555,4 +555,42 @@ function save() {
   font-size: 11px;
   color: #3a5878;
 }
+
+/* ── RWD ──────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .sys-layout {
+    grid-template-columns: 1fr;
+  }
+  .sys-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 4px;
+  }
+  .sn-title {
+    display: none;
+  }
+  .sn-item {
+    flex: 0 0 auto;
+    padding: 7px 12px;
+    font-size: 12px;
+    border: 1px solid rgba(0, 212, 255, 0.1);
+  }
+  .sn-bar {
+    display: none;
+  }
+  .sys-content {
+    padding: 16px;
+  }
+  .fg-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .fg-label {
+    margin-bottom: 0;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>

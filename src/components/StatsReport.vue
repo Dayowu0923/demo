@@ -530,4 +530,37 @@ const kpiCards = [
   min-width: 32px;
   text-align: right;
 }
+
+/* ── RWD ──────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .kpi-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .charts-row {
+    grid-template-columns: 1fr;
+  }
+  .pie-layout {
+    gap: 12px;
+  }
+}
+@media (max-width: 540px) {
+  .kpi-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .kpi-val {
+    font-size: 24px;
+  }
+  .pie-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pie-svg {
+    width: 160px;
+    height: 160px;
+  }
+  .bar-chart {
+    padding: 8px 10px 4px;
+  }
+}
 </style>

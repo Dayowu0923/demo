@@ -24,7 +24,7 @@
   text-align: center;
   padding: 16px 24px;
   font-size: 11px;
-  color: #1e3450;
+  color: #5a8ab0;
   border-top: 1px solid rgba(0, 212, 255, 0.06);
   background: rgba(2, 4, 10, 0.88);
   backdrop-filter: blur(20px);
@@ -38,16 +38,16 @@
   gap: 3px;
 }
 .footer-brand {
-  color: #2a4568;
+  color: #7aaac8;
   font-weight: 600;
   font-size: 12px;
   letter-spacing: 0.5px;
 }
 .footer-info {
-  color: #1a2e45;
+  color: #5a80a0;
 }
 .footer-copy {
-  color: #152338;
+  color: #4a7090;
 }
 .footer-glow {
   position: absolute;

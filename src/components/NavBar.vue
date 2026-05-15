@@ -272,4 +272,38 @@ const emit = defineEmits<{ (e: "navigate", page: string): void }>();
     inset -1px -1px 4px rgba(255, 255, 255, 0.018);
   transform: scale(0.96);
 }
+
+/* ── RWD ──────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 14px;
+    gap: 8px;
+    height: 52px;
+  }
+  .nl {
+    padding: 5px 9px;
+    font-size: 11.5px;
+  }
+  .nav-user {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .nav-links {
+    gap: 0;
+    margin-left: 4px;
+  }
+  .nl {
+    padding: 5px 7px;
+    font-size: 11px;
+    letter-spacing: 0;
+  }
+  .brand-name {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+  .logout-btn {
+    padding: 5px 10px;
+  }
+}
 </style>
