@@ -374,15 +374,15 @@ const dragOver = ref("");
   -webkit-backdrop-filter: blur(52px) saturate(220%) brightness(1.14) !important;
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.03) 55%,
-    rgba(0, 212, 255, 0.05) 100%
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0.07) 55%,
+    rgba(0, 212, 255, 0.08) 100%
   ) !important;
-  border-top-color: rgba(255, 255, 255, 0.28) !important;
-  border-left-color: rgba(255, 255, 255, 0.16) !important;
+  border-top-color: rgba(255, 255, 255, 0.32) !important;
+  border-left-color: rgba(255, 255, 255, 0.18) !important;
   box-shadow:
     0 10px 44px rgba(0, 0, 0, 0.58),
-    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.24),
     inset 0 -1px 0 rgba(0, 0, 0, 0.22),
     0 0 0 1px rgba(0, 212, 255, 0.08),
     0 4px 24px var(--gc, rgba(0, 212, 255, 0.2));
@@ -470,15 +470,15 @@ const dragOver = ref("");
 .kc-card {
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.04) 50%,
-    rgba(0, 212, 255, 0.05) 100%
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(0, 212, 255, 0.08) 100%
   );
   backdrop-filter: blur(28px) saturate(200%) brightness(1.12);
   -webkit-backdrop-filter: blur(28px) saturate(200%) brightness(1.12);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-top-color: rgba(255, 255, 255, 0.28);
-  border-left-color: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-top-color: rgba(255, 255, 255, 0.32);
+  border-left-color: rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   padding: 11px 12px;
   cursor: grab;
@@ -486,7 +486,7 @@ const dragOver = ref("");
   overflow: hidden;
   box-shadow:
     0 4px 24px rgba(0, 0, 0, 0.55),
-    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
     inset 0 -1px 0 rgba(0, 0, 0, 0.22),
     0 0 0 1px rgba(0, 212, 255, 0.07);
   transition:
@@ -502,11 +502,7 @@ const dragOver = ref("");
   left: 5%;
   right: 5%;
   height: 38%;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.11),
-    transparent
-  );
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent);
   border-radius: 12px 12px 60% 60% / 12px 12px 30% 30%;
   pointer-events: none;
   z-index: 1;

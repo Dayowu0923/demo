@@ -303,7 +303,7 @@ const emit = defineEmits<{ (e: "navigate", page: string): void }>();
     letter-spacing: 0.5px;
   }
   .logout-btn {
-    padding: 5px 10px;
+    display: none;
   }
 }
 </style>

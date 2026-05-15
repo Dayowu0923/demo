@@ -40,18 +40,18 @@ body {
 .lg {
   position: relative; overflow: hidden;
   background: linear-gradient(135deg,
-    rgba(255,255,255,.065) 0%,
-    rgba(255,255,255,.015) 50%,
-    rgba(0,212,255,.03) 100%);
+    rgba(255,255,255,.13) 0%,
+    rgba(255,255,255,.055) 50%,
+    rgba(0,212,255,.055) 100%);
   backdrop-filter: blur(38px) saturate(195%) brightness(1.07);
   -webkit-backdrop-filter: blur(38px) saturate(195%) brightness(1.07);
   border: 1px solid rgba(255,255,255,.08);
-  border-top-color: rgba(255,255,255,.17);
-  border-left-color: rgba(255,255,255,.1);
+  border-top-color: rgba(255,255,255,.25);
+  border-left-color: rgba(255,255,255,.14);
   border-radius: var(--r);
   box-shadow:
     0 8px 38px rgba(0,0,0,.52),
-    inset 0 1px 0 rgba(255,255,255,.09),
+    inset 0 1px 0 rgba(255,255,255,.16),
     inset 0 -1px 0 rgba(0,0,0,.18),
     0 0 0 1px rgba(0,212,255,.05);
   transition: box-shadow .25s, border-color .25s;
@@ -60,7 +60,7 @@ body {
 .lg::before {
   content: ''; position: absolute;
   top: 0; left: 0; right: 0; height: 44%;
-  background: linear-gradient(180deg, rgba(255,255,255,.075) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,.16) 0%, transparent 100%);
   border-radius: inherit; pointer-events: none; z-index: 1;
 }
 /* Chromatic-aberration colour wash */
