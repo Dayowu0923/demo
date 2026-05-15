@@ -259,7 +259,6 @@ onMounted(() => {
 .stat-card {
   padding: 16px 18px;
   cursor: default;
-  will-change: transform;
   animation: card-in 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
   animation-delay: calc(var(--i) * 70ms);
   /* strengthen liquid glass beyond global .lg */
