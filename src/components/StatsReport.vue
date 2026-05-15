@@ -319,7 +319,22 @@ const kpiCards = [
   padding: 16px 20px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 24px var(--gc, rgba(0, 212, 255, 0.2));
+  backdrop-filter: blur(52px) saturate(220%) brightness(1.14) !important;
+  -webkit-backdrop-filter: blur(52px) saturate(220%) brightness(1.14) !important;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 55%,
+    rgba(0, 212, 255, 0.05) 100%
+  ) !important;
+  border-top-color: rgba(255, 255, 255, 0.28) !important;
+  border-left-color: rgba(255, 255, 255, 0.16) !important;
+  box-shadow:
+    0 10px 44px rgba(0, 0, 0, 0.58),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22),
+    0 0 0 1px rgba(0, 212, 255, 0.08),
+    0 4px 24px var(--gc, rgba(0, 212, 255, 0.2));
 }
 .kpi-val {
   font-size: 30px;

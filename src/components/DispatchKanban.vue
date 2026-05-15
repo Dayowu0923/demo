@@ -370,7 +370,22 @@ const dragOver = ref("");
   padding: 14px 18px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 24px var(--gc, rgba(0, 212, 255, 0.2));
+  backdrop-filter: blur(52px) saturate(220%) brightness(1.14) !important;
+  -webkit-backdrop-filter: blur(52px) saturate(220%) brightness(1.14) !important;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 55%,
+    rgba(0, 212, 255, 0.05) 100%
+  ) !important;
+  border-top-color: rgba(255, 255, 255, 0.28) !important;
+  border-left-color: rgba(255, 255, 255, 0.16) !important;
+  box-shadow:
+    0 10px 44px rgba(0, 0, 0, 0.58),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22),
+    0 0 0 1px rgba(0, 212, 255, 0.08),
+    0 4px 24px var(--gc, rgba(0, 212, 255, 0.2));
 }
 .ks-count {
   font-size: 32px;
@@ -451,25 +466,61 @@ const dragOver = ref("");
   min-height: 240px;
 }
 
-/* Single card */
+/* Single card — strong liquid glass */
 .kc-card {
-  background: rgba(8, 20, 45, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 10px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.04) 50%,
+    rgba(0, 212, 255, 0.05) 100%
+  );
+  backdrop-filter: blur(28px) saturate(200%) brightness(1.12);
+  -webkit-backdrop-filter: blur(28px) saturate(200%) brightness(1.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-top-color: rgba(255, 255, 255, 0.28);
+  border-left-color: rgba(255, 255, 255, 0.16);
+  border-radius: 12px;
   padding: 11px 12px;
   cursor: grab;
   position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22),
+    0 0 0 1px rgba(0, 212, 255, 0.07);
   transition:
-    transform 0.15s,
-    box-shadow 0.15s,
-    border-color 0.15s;
+    transform 0.18s,
+    box-shadow 0.18s,
+    border-color 0.18s;
+}
+/* specular shine on top edge */
+.kc-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  height: 38%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.11),
+    transparent
+  );
+  border-radius: 12px 12px 60% 60% / 12px 12px 30% 30%;
+  pointer-events: none;
+  z-index: 1;
 }
 .kc-card:hover {
-  transform: translateY(-2px);
-  border-color: rgba(0, 212, 255, 0.22);
+  transform: translateY(-3px);
+  border-color: rgba(0, 212, 255, 0.32);
+  border-top-color: rgba(255, 255, 255, 0.38);
   box-shadow:
-    0 6px 20px rgba(0, 0, 0, 0.4),
-    0 0 10px rgba(0, 212, 255, 0.1);
+    0 10px 32px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.25),
+    0 0 18px rgba(0, 212, 255, 0.18),
+    0 0 0 1px rgba(0, 212, 255, 0.18);
 }
 .kc-card:active {
   cursor: grabbing;

@@ -262,6 +262,22 @@ onMounted(() => {
   will-change: transform;
   animation: card-in 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
   animation-delay: calc(var(--i) * 70ms);
+  /* strengthen liquid glass beyond global .lg */
+  backdrop-filter: blur(52px) saturate(220%) brightness(1.14) !important;
+  -webkit-backdrop-filter: blur(52px) saturate(220%) brightness(1.14) !important;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 55%,
+    rgba(0, 212, 255, 0.05) 100%
+  ) !important;
+  border-top-color: rgba(255, 255, 255, 0.28) !important;
+  border-left-color: rgba(255, 255, 255, 0.16) !important;
+  box-shadow:
+    0 10px 44px rgba(0, 0, 0, 0.58),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22),
+    0 0 0 1px rgba(0, 212, 255, 0.08) !important;
 }
 @keyframes card-in {
   from {
